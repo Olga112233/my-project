@@ -7,10 +7,8 @@ body {
 }
 .wrapper {
 	padding: $gap;
-	min-height: 100vh;
-	
-	
-	
+	min-height: 100vh;	
+
 }
 header {
 	height: $gap;
@@ -34,10 +32,17 @@ header {
 	}
 	.lang {
 		text-decoration: none;
-		font-size: 18px;
-		.lang eng {
-			color: $brand-color;
+		font-size: 18px;		
+		color: $brand-color;
+		border-right: 1px solid $main-text;
+		padding-right: 8px;
+		&-ukr {
+			color:$main-text; 
+			text-decoration: none;
+			font-size: 18px;
+			
 		}
+		
 	}		
 }	
 .menu {
@@ -56,6 +61,12 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	.icon {
+		margin-bottom: 19px;
+	}
+	
+	
 }
 .hero {
 	width: 100%;
@@ -79,15 +90,26 @@ header {
 	&-text {
 		position: relative;
 		z-index: 10;
-
 		.welcome {
 			font-size: 80px;
 			line-height: 94px;
 			font-family: Roboto;			
 			font-weight: 900;
-			
+			.dot {
+			    &:after {
+				  content: "";
+				  width: 14px;
+				  height: 14px;
+				  background: $brand-color;				
+				  position: absolute;
+				  border-radius: 50%;
+				  bottom: 18px;
+				
+			    }			
 			}
-	}		
+	}
+}
+		
 
 	.info {
 		opacity: 0;
@@ -108,4 +130,5 @@ header {
 			display: none;			
 		}
 	}
-}   
+	
+}		

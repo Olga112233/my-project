@@ -70,9 +70,14 @@ header {
       margin-right: 100px; }
   header .lang {
     text-decoration: none;
-    font-size: 18px; }
-    header .lang .lang eng {
-      color: #F92672; }
+    font-size: 18px;
+    color: #F92672;
+    border-right: 1px solid #272822;
+    padding-right: 8px; }
+    header .lang-ukr {
+      color: #272822;
+      text-decoration: none;
+      font-size: 18px; }
 
 .menu {
   width: 80px;
@@ -89,7 +94,10 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
+  .links .icon {
+    margin-bottom: 19px; }
 
 .hero {
   width: 100%;
@@ -117,6 +125,14 @@ header {
       line-height: 94px;
       font-family: Roboto;
       font-weight: 900; }
+      .hero-text .welcome .dot:after {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background: #F92672;
+        position: absolute;
+        border-radius: 50%;
+        bottom: 18px; }
   .hero .info {
     opacity: 0;
     display: none; }
