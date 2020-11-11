@@ -8,6 +8,9 @@ body {
 .wrapper {
 	padding: $gap;
 	min-height: 100vh;
+	
+	
+	
 }
 header {
 	height: $gap;
@@ -15,7 +18,28 @@ header {
 	background: $bg-color;
 	top: 0;
 	left: 0;
-}
+	padding-top: 43px;
+	
+	.header-block {
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+		.header-top {
+			margin-left: 80px;
+		}
+		.header-area {
+			margin-right: 100px;
+		}
+		
+	}
+	.lang {
+		text-decoration: none;
+		font-size: 18px;
+		.lang eng {
+			color: $brand-color;
+		}
+	}		
+}	
 .menu {
 	width: $gap;
 	position: fixed;
@@ -55,7 +79,16 @@ header {
 	&-text {
 		position: relative;
 		z-index: 10;
-	}
+
+		.welcome {
+			font-size: 80px;
+			line-height: 94px;
+			font-family: Roboto;			
+			font-weight: 900;
+			
+			}
+	}		
+
 	.info {
 		opacity: 0;
 		display: none;
@@ -72,7 +105,7 @@ header {
 		}
 		.welcome {
 			opacity: 0;
-			display: none;
+			display: none;			
 		}
 	}
-}
+}   

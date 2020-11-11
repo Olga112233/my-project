@@ -58,7 +58,21 @@ header {
   position: fixed;
   background: #fff;
   top: 0;
-  left: 0; }
+  left: 0;
+  padding-top: 43px; }
+  header .header-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw; }
+    header .header-block .header-top {
+      margin-left: 80px; }
+    header .header-block .header-area {
+      margin-right: 100px; }
+  header .lang {
+    text-decoration: none;
+    font-size: 18px; }
+    header .lang .lang eng {
+      color: #F92672; }
 
 .menu {
   width: 80px;
@@ -98,6 +112,11 @@ header {
   .hero-text {
     position: relative;
     z-index: 10; }
+    .hero-text .welcome {
+      font-size: 80px;
+      line-height: 94px;
+      font-family: Roboto;
+      font-weight: 900; }
   .hero .info {
     opacity: 0;
     display: none; }
