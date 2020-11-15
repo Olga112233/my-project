@@ -8,6 +8,7 @@ body {
 .wrapper {
 	padding: $gap;
 	min-height: 100vh;	
+	
 
 }
 header {
@@ -16,7 +17,7 @@ header {
 	background: $bg-color;
 	top: 0;
 	left: 0;
-	padding-top: 43px;
+	
 	
 	.header-block {
 		display: flex;
@@ -27,22 +28,21 @@ header {
 		}
 		.header-area {
 			margin-right: 100px;
+			
 		}
 		
 	}
 	.lang {
 		text-decoration: none;
 		font-size: 18px;		
-		color: $brand-color;
 		border-right: 1px solid $main-text;
 		padding-right: 8px;
-		&-ukr {
-			color:$main-text; 
+		color: $main-text;		
+		&-ukr {			 
 			text-decoration: none;
 			font-size: 18px;
-			
-		}
-		
+			color: $main-text;			
+		}		
 	}		
 }	
 .menu {
@@ -51,7 +51,52 @@ header {
 	top: 50%;
 	left: 0;
 	transition: translateY(50%);
+	z-index: 1;
+	
+	.btn-burger {
+		width: 56px;
+		height: 31px;
+		position: absolute;
+		top: 0;
+		left: 50px;
+		background: none;
+		border: 0;
+		padding: 0;
+		cursor: pointer;
+		outline: none;		
+		.btn-burger-line {
+			width: 56px;
+			height: 5px;
+			background: $main-text;
+			display: block;
+			transition: .25s ease-in-out;
+			
+			&:before {
+				content: "";
+				width: 56px;
+				height: 5px;
+				background: $main-text;
+				display: block;
+				position: absolute;
+				left: -5px;
+				top: 0;
+				transition: .25s ease-in-out;				
+				}
+				&:after {
+					content: "";
+					width: 56px;
+					height: 5px;
+					background: $main-text;
+					display: block;
+					position: absolute;
+					left: -5px;
+					top: 25px;
+					transition: .25s ease-in-out;				
+					}						
 }
+	}
+}
+	
 .links {
 	width: $gap;
 	position: fixed;
@@ -114,7 +159,25 @@ header {
 	.info {
 		opacity: 0;
 		display: none;
+		width: 600px;
+		height: 215px;
+		box-sizing: border-box;
+		padding-right: 30px;
+		margin-right: 300px;		
+		.since {
+			font-size: 18px;
+			color:$brand-color;
+			font-style: italic;
+		}
+		.markup	{
+			font-size: $text-size;
+			font-family: Roboto;			
+			font-weight: 900;
+			margin-bottom: 20px;
+		}	
 	}
+	
+
 	&:hover {
 		&:before {
 			opacity: 0;
@@ -129,6 +192,23 @@ header {
 			opacity: 0;
 			display: none;			
 		}
+		
 	}
 	
-}		
+	 
+	
+}
+.parallax {
+	background-image: url(../img/098ed5e10be45935f13f2b83509ba556.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	
+}
+	
+
+
+
