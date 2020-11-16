@@ -58,7 +58,10 @@ header {
   position: fixed;
   background: #fff;
   top: 0;
-  left: 0; }
+  left: 0;
+  padding-top: 40px;
+  box-sizing: border-box;
+  z-index: 10; }
   header .header-block {
     display: flex;
     justify-content: space-between;
@@ -177,7 +180,7 @@ header {
     height: 215px;
     box-sizing: border-box;
     padding-right: 30px;
-    margin-right: 300px; }
+    margin-right: 600px; }
     .hero .info .since {
       font-size: 18px;
       color: #F92672;
@@ -206,3 +209,47 @@ header {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%; }
+
+.title {
+  font-size: 80px;
+  line-height: 94px;
+  font-family: Roboto;
+  font-weight: 900; }
+
+.main {
+  height: calc(100vh - 240px);
+  max-width: 100%;
+  background: #F5F5F5;
+  padding: 80px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .main .data {
+    margin-top: 32px; }
+  .main .table {
+    margin-bottom: 32px;
+    position: relative;
+    cursor: pointer; }
+    .main .table:after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: #F92672;
+      position: absolute;
+      border-radius: 50%;
+      left: 520px;
+      top: 50%; }
+
+.table:hover:after {
+  transition: all 1s linear;
+  background: #F92672;
+  width: 400px;
+  border-radius: 25px; }
+
+.page {
+  background-image: url(../img/ea09a648f8ba4ce2e27832110377d7c7.png);
+  background-size: 100%;
+  height: 120vh;
+  width: 100%;
+  background-repeat: no-repeat; }

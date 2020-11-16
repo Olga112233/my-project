@@ -7,9 +7,8 @@ body {
 }
 .wrapper {
 	padding: $gap;
-	min-height: 100vh;	
-	
-
+	min-height: 100vh;
+		
 }
 header {
 	height: $gap;
@@ -17,8 +16,9 @@ header {
 	background: $bg-color;
 	top: 0;
 	left: 0;
-	
-	
+	padding-top: 40px;
+	box-sizing: border-box;	
+	z-index: 10;
 	.header-block {
 		display: flex;
 		justify-content: space-between;
@@ -27,10 +27,8 @@ header {
 			margin-left: 80px;
 		}
 		.header-area {
-			margin-right: 100px;
-			
-		}
-		
+			margin-right: 100px;			
+		}		
 	}
 	.lang {
 		text-decoration: none;
@@ -51,8 +49,7 @@ header {
 	top: 50%;
 	left: 0;
 	transition: translateY(50%);
-	z-index: 1;
-	
+	z-index: 1;	
 	.btn-burger {
 		width: 56px;
 		height: 31px;
@@ -69,8 +66,7 @@ header {
 			height: 5px;
 			background: $main-text;
 			display: block;
-			transition: .25s ease-in-out;
-			
+			transition: .25s ease-in-out;			
 			&:before {
 				content: "";
 				width: 56px;
@@ -109,9 +105,7 @@ header {
 	align-items: center;
 	.icon {
 		margin-bottom: 19px;
-	}
-	
-	
+	}	
 }
 .hero {
 	width: 100%;
@@ -148,8 +142,7 @@ header {
 				  background: $brand-color;				
 				  position: absolute;
 				  border-radius: 50%;
-				  bottom: 18px;
-				
+				  bottom: 18px;				
 			    }			
 			}
 	}
@@ -163,7 +156,7 @@ header {
 		height: 215px;
 		box-sizing: border-box;
 		padding-right: 30px;
-		margin-right: 300px;		
+		margin-right: 600px;		
 		.since {
 			font-size: 18px;
 			color:$brand-color;
@@ -191,12 +184,8 @@ header {
 		.welcome {
 			opacity: 0;
 			display: none;			
-		}
-		
-	}
-	
-	 
-	
+		}		
+	}	
 }
 .parallax {
 	background-image: url(../img/098ed5e10be45935f13f2b83509ba556.jpg);
@@ -205,8 +194,58 @@ header {
     background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
-	width: 100%;
+	width: 100%;	
+}
+.title {
+	font-size: 80px;
+	line-height: 94px;
+	font-family: Roboto;			
+	font-weight: 900;
 	
+}
+.main {
+	height: calc(100vh - 240px);
+	max-width: 100%;
+	background: #F5F5F5;
+	padding: $gap;
+	margin: $gap auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	.data {
+		margin-top: 32px;
+	}	
+	.table {		
+		margin-bottom: 32px;
+		position: relative;	
+		cursor: pointer;
+		&:after {
+			content: "";
+			width: 14px;
+			height: 14px;	
+			background: $brand-color;						
+			position: absolute;
+			border-radius: 50%;
+			left: 520px;
+			top: 50%;				
+    }						
+		  }				
+	}	
+.table:hover:after {
+	transition: all 1s linear;    
+	background: $brand-color;
+	width: 400px;
+	border-radius: 25px;
+	
+}
+
+
+.page {
+	background-image: url(../img/ea09a648f8ba4ce2e27832110377d7c7.png);
+	background-size: 100%;	
+	height: 120vh;
+	width: 100%;
+	background-repeat: no-repeat;	
 }
 	
 
