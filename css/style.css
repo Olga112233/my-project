@@ -176,7 +176,7 @@ header {
   .hero .info {
     opacity: 0;
     display: none;
-    width: 600px;
+    max-width: 600px;
     height: 215px;
     box-sizing: border-box;
     padding-right: 30px;
@@ -253,3 +253,46 @@ header {
   height: 120vh;
   width: 100%;
   background-repeat: no-repeat; }
+
+.projects {
+  padding: 80px;
+  margin: 80px auto;
+  background: #353535;
+  max-width: 100%;
+  height: 110vh;
+  display: none; }
+  .projects .title {
+    color: #E6DB74; }
+  .projects .title-text {
+    margin: 80px auto 80px 0;
+    max-width: 600px; }
+    .projects .title-text .lib {
+      font-size: 32px;
+      font-family: Roboto;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 60px; }
+    .projects .title-text .component {
+      color: #fff;
+      font-family: Roboto; }
+    .projects .title-text .lab {
+      margin-top: 16px;
+      color: #F92672; }
+      .projects .title-text .lab .git {
+        color: #F92672; }
+
+.menu-open .projects {
+  display: block; }
+
+.menu-open .page {
+  display: none; }
+
+.menu-open .btn-burger .btn-burger-line {
+  transform: rotate(45deg); }
+
+.menu-open .btn-burger .btn-burger-line:before {
+  transform: rotate(90deg);
+  left: 0; }
+
+.menu-open .btn-burger .btn-burger-line:after {
+  display: none; }
