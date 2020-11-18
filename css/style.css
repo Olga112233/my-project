@@ -159,7 +159,7 @@ header {
     z-index: 0; }
   .hero-text {
     position: relative;
-    z-index: 10; }
+    z-index: 8; }
     .hero-text .welcome {
       font-size: 80px;
       line-height: 94px;
@@ -200,6 +200,64 @@ header {
   .hero:hover .welcome {
     opacity: 0;
     display: none; }
+
+.active {
+  width: 100%;
+  height: calc(100vh - 160px);
+  margin-bottom: 80px;
+  display: none; }
+  .active .active-hero {
+    width: 50%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E6DB74; }
+    .active .active-hero .active-info {
+      margin: 0 auto;
+      display: block;
+      max-width: 600px;
+      height: 215px;
+      box-sizing: border-box;
+      padding-right: 30px; }
+      .active .active-hero .active-info .active-since {
+        font-size: 18px;
+        color: #F92672;
+        font-style: italic; }
+      .active .active-hero .active-info .active-markup {
+        font-size: 32px;
+        font-family: Roboto;
+        font-weight: 900;
+        margin-bottom: 20px; }
+  .active .nav {
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    box-sizing: border-box; }
+    .active .nav .nav-list {
+      font-size: 32px;
+      font-family: Roboto;
+      font-weight: 900;
+      margin-bottom: 32px; }
+    .active .nav .tel {
+      margin: 48px 0 80px 0;
+      font-size: 18px; }
+    .active .nav .tabs {
+      font-size: 18px;
+      color: #F92672;
+      font-style: italic;
+      margin-bottom: 16px; }
+    .active .nav .cont .sort {
+      font-size: 32px;
+      font-family: Roboto;
+      font-weight: 900;
+      color: #272822;
+      text-decoration: none; }
 
 .parallax {
   background-image: url(../img/098ed5e10be45935f13f2b83509ba556.jpg);
@@ -296,3 +354,9 @@ header {
 
 .menu-open .btn-burger .btn-burger-line:after {
   display: none; }
+
+.menu-open .hero {
+  display: none; }
+
+.menu-open .active {
+  display: flex; }
