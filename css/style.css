@@ -87,7 +87,7 @@ header {
   top: 50%;
   left: 0;
   transition: translateY(50%);
-  z-index: 1; }
+  z-index: 9; }
   .menu .btn-burger {
     width: 56px;
     height: 31px;
@@ -203,7 +203,7 @@ header {
 
 .active {
   width: 100%;
-  height: calc(100vh - 160px);
+  height: 100%;
   margin-bottom: 80px;
   display: none; }
   .active .active-hero {
@@ -244,6 +244,9 @@ header {
       font-family: Roboto;
       font-weight: 900;
       margin-bottom: 32px; }
+      .active .nav .nav-list .sort {
+        color: #272822;
+        text-decoration: none; }
     .active .nav .tel {
       margin: 48px 0 80px 0;
       font-size: 18px; }
@@ -272,14 +275,14 @@ header {
   font-size: 80px;
   line-height: 94px;
   font-family: Roboto;
-  font-weight: 900; }
+  font-weight: 900;
+  z-index: 5; }
 
 .main {
-  height: calc(100vh - 240px);
+  height: 100%;
   max-width: 100%;
   background: #F5F5F5;
   padding: 80px;
-  margin: 80px auto;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -295,15 +298,14 @@ header {
       height: 14px;
       background: #F92672;
       position: absolute;
-      border-radius: 50%;
+      border-radius: 7px;
       left: 520px;
       top: 50%; }
 
 .table:hover:after {
   transition: all 1s linear;
   background: #F92672;
-  width: 400px;
-  border-radius: 25px; }
+  width: 400px; }
 
 .page {
   background-image: url(../img/ea09a648f8ba4ce2e27832110377d7c7.png);
@@ -314,7 +316,6 @@ header {
 
 .projects {
   padding: 80px;
-  margin: 80px auto;
   background: #353535;
   max-width: 100%;
   height: 110vh;
@@ -359,4 +360,71 @@ header {
   display: none; }
 
 .menu-open .active {
-  display: flex; }
+  display: flex;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  padding: 80px;
+  box-sizing: border-box;
+  height: 100%; }
+
+.menu-open .main {
+  z-index: 5;
+  position: relative; }
+
+.menu-open .projects {
+  z-index: 5;
+  position: relative; }
+
+.experience {
+  height: 100%;
+  max-width: 100%;
+  background: #F5F5F5;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 5;
+  position: relative; }
+  .experience .edit {
+    margin: 80px 0; }
+  .experience .tabs {
+    font-size: 18px;
+    color: #F92672;
+    font-style: italic;
+    margin-bottom: 16px; }
+  .experience .epam {
+    font-size: 32px;
+    font-family: Roboto;
+    font-weight: 900; }
+  .experience .lab {
+    margin-top: 46px;
+    font-size: 18px;
+    color: #F92672;
+    font-style: italic; }
+    .experience .lab .git {
+      color: #F92672; }
+
+.footer {
+  height: 100%;
+  max-width: 100%;
+  padding: 80px 80px 0 80px;
+  background: #fff;
+  z-index: 5;
+  position: relative; }
+  .footer .lab {
+    font-size: 18px;
+    color: #F92672;
+    font-style: italic; }
+  .footer .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 23px; }
+  .footer .fone {
+    font-size: 18px; }
+  .footer .sort {
+    color: #272822;
+    text-decoration: none;
+    font-weight: 900; }

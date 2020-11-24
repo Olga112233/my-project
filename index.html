@@ -53,9 +53,9 @@
           </section>
           <section class="active">
             <div class="nav">
-              <p class="nav-list">Skills</p>
-              <p class="nav-list">Projects</p>
-              <p class="nav-list">Experience</p>
+              <p class="nav-list"><a href="#skills" class="sort">Skills</a></p>
+              <p class="nav-list"><a href="#projects" class="sort">Projects</a></p>
+              <p class="nav-list"><a href="#experience" class="sort">Experience</a></p>
               <p class="tel">+421 944 700 347</p>
               <p class="tabs">Want to collaborate?</p>
               <p class="cont"><a class="sort" href="#">email me &#8594;</a></p>
@@ -70,7 +70,7 @@
 
           </section>
           <section class="parallax"></section>
-          <section class="main">
+          <section class="main" id="skills">
               <h2 class="title">SKILLS</h2>
               <ul class="data">
                 <li class="table">HTML/CSS</li>
@@ -83,7 +83,7 @@
               </ul>
           </section>     
           <section class="page"></section>
-          <section class="projects">
+          <section class="projects" id="projects">
               <h2 class="title">PROJECTS</h2>
               <div class="title-text">
                 <p class="lib">Mylib</p>
@@ -94,13 +94,30 @@
                 <p class="lib">Adaptive Layout Example</p>
                 <p class="component">html page with burger menu</p>
                 <p class="lab"><a class="git" href="#">gitlab</a> &#8594;</p>
-            </div> 
-
+            </div>
           </section>
-          <section class="">
+          <section class="experience" id="experience">
               <h2 class="title">EXPERIENCE</h2>
+              <div class="edit">
+                <p class="tabs">march 2020 - now</p>
+                <p class="epam">epam</p>
+                <p class="">Internship.</p> 
+                <p class="">Deal with HTML/CSS components for design system.</p>
+              </div>
+              <div class="data">
+                <p class="tabs">december 2019 - march 2020</p>
+                <p class="epam">IT school Hillel</p>
+                <p class="">Front-end basic course</p>
+                <p class="lab"><a class="git" href="#">certificate</a> &#8594;</p>
+            </div> 
           </section>
-          <footer></footer>
+          <footer class="footer">
+            <p class="lab">Want to collaborate?</p>
+            <div class="footer-info">
+              <p class="cont"><a class="sort" href="#">email me</a> &#8594;</p>
+              <p class="fone">+421944700347</p> 
+            </div>
+          </footer>
         </div>         
         <script>
 	        let burger = document.querySelector("#burgerID");
